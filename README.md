@@ -48,11 +48,11 @@ Create a low-friction detection for Nmap scans against a Wazuh server using a lo
    ```bash
    sudo systemctl restart wazuh-manager
    ```
-4. Reproduce a test scan from an attacker machine (replace `10.0.0.121` with your Wazuh server IP):
+4. Reproduce a test scan from an attacker machine (replace `10.0.0.XX` with your Wazuh server IP):
    ```bash
-   nmap -sS 10.0.0.121
-   nmap -A 10.0.0.121
-   nmap -p 22,80,443 10.0.0.121
+   nmap -sS 10.0.0.XX
+   nmap -A 10.0.0.XX
+   nmap -p 22,80,443 10.0.0.XX
    ```
    ![step-4-kali-nmap](https://github.com/user-attachments/assets/b2c45043-6b11-4b7d-9a5b-75f1f7d7f426)
 
