@@ -90,4 +90,3 @@ Working on this project gave me practical, end‑to‑end experience in detectio
       Learned how to turn a technical lab into a clear, recruiter‑facing portfolio project with structured documentation, visuals, and reproducible instructions.
 
 My LiknedIn: www.linkedin.com/in/
-adnan-siyat-439542309
