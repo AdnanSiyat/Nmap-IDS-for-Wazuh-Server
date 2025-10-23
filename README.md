@@ -38,6 +38,8 @@ Create a low-friction detection for Nmap scans against a Wazuh server using a lo
    ```bash
    sudo cp wazuh/local_rules.xml /var/ossec/etc/rules/local_rules.xml
    ```
+   ![step-1-local-rules](https://github.com/user-attachments/assets/5ca78fc6-f1fc-4b2e-ae11-f2a36fa5e869)
+
 2. Validate the XML:
    ```bash
    sudo xmllint --noout /var/ossec/etc/rules/local_rules.xml
@@ -52,26 +54,44 @@ Create a low-friction detection for Nmap scans against a Wazuh server using a lo
    nmap -A 10.0.0.121
    nmap -p 22,80,443 10.0.0.121
    ```
+   ![step-4-kali-nmap](https://github.com/user-attachments/assets/b2c45043-6b11-4b7d-9a5b-75f1f7d7f426)
+
+   
 5. Tail the alerts to confirm detection:
    ```bash
    sudo tail -f /var/ossec/logs/alerts/alerts.log
    ```
+   ![step-5-alerts-success](https://github.com/user-attachments/assets/1046b3ae-13e8-4ef5-8f10-2d7db1190e35)
 
-## What is included
-* `wazuh/local_rules.xml` — working rule that generated the alerts in testing.
-* `test-data/` — the commands used and sanitized Nmap output for reference.
-* `docs/images/` — screenshots (steps 1, 4, 5) showing the rule file, attacker scan, and alerts.
-* `scripts/validate-and-restart.sh` — helper to validate XML and restart Wazuh safely.
 
-## Extensions / Improvements (recommended)
-* Correlation rule: detect multiple distinct port connection attempts within short time window (common for port scanners).
-* Network-based detection: use Zeek or Suricata signatures to detect SYN floods / intense SYN activity (Nmap `-sS`).
-* Agent-side detection: capture `process`/`cmdline` events and auditd logs to match `nmap` in executed commands.
-* Rate-limiting rules: fire only when threshold of connections in X seconds is exceeded to reduce false positives.
+What I Learned
+Working on this project gave me practical, end‑to‑end experience in detection engineering and reinforced several professional skills:
+- Custom Rule Development
 
-## License
-MIT (see `LICENSE` file).
+      Built and deployed a Wazuh local_rules.xml rule to detect Nmap activity, learning how to translate a detection idea into a working, testable configuration.
+
+- Validation and Troubleshooting
+
+      Strengthened my ability to validate XML configurations (xmllint), restart services safely, and confirm rule behavior by analyzing live Wazuh alert logs.
+
+- Adversary Simulation
+
+      Practiced simulating attacker behavior with different Nmap scan types (-sS, -A, targeted ports) to verify detection coverage and understand how attackers leave traces in logs.
+
+- Detection Trade‑offs
+
+      Gained insight into the balance between simple string‑based detections (fast, low‑friction) and more advanced approaches like correlation rules or rate‑limiting to reduce false positives.
+
+- Operational Workflow
+
+      Improved my workflow for safely deploying changes, validating results, and documenting reproducible steps — habits that are critical in SOC and detection engineering roles.
+
+- Professional Communication
+
+      Learned how to turn a technical lab into a clear, recruiter‑facing portfolio project with structured documentation, visuals, and reproducible instructions.
+
+My LiknedIn: www.linkedin.com/in/
+adnan-siyat-439542309
 
 ---
-If you'd like, I can also open a PR template, add CI to run `xmllint` automatically on push, or help you create a real GitHub repo (I will give you the exact git commands to run).
-
+If you'd like, I can also open a PR template, add CI to run `xmllint` automatically on push, or help you create a real GitHub repo (I will give you the exact git commands to run
