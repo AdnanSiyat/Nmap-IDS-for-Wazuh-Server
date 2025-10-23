@@ -67,26 +67,26 @@ What I Learned
 Working on this project gave me practical, end‑to‑end experience in detection engineering and reinforced several professional skills:
 - Custom Rule Development
 
-      Built and deployed a Wazuh local_rules.xml rule to detect Nmap activity, learning how to translate a detection idea into a working, testable configuration.
+  Built and deployed a Wazuh local_rules.xml rule to detect Nmap activity, learning how to translate a detection idea into a working, testable configuration.
 
 - Validation and Troubleshooting
 
-      Strengthened my ability to validate XML configurations (xmllint), restart services safely, and confirm rule behavior by analyzing live Wazuh alert logs.
+  Strengthened my ability to validate XML configurations (xmllint), restart services safely, and confirm rule behavior by analyzing live Wazuh alert logs.
 
 - Adversary Simulation
 
-      Practiced simulating attacker behavior with different Nmap scan types (-sS, -A, targeted ports) to verify detection coverage and understand how attackers leave traces in logs.
+  Practiced simulating attacker behavior with different Nmap scan types (-sS, -A, targeted ports) to verify detection coverage and understand how attackers leave traces in logs.
 
 - Detection Trade‑offs
 
-      Gained insight into the balance between simple string‑based detections (fast, low‑friction) and more advanced approaches like correlation rules or rate‑limiting to reduce false positives.
+  Gained insight into the balance between simple string‑based detections (fast, low‑friction) and more advanced approaches like correlation rules or rate‑limiting to reduce false positives.
 
 - Operational Workflow
 
-      Improved my workflow for safely deploying changes, validating results, and documenting reproducible steps — habits that are critical in SOC and detection engineering roles.
+  Improved my workflow for safely deploying changes, validating results, and documenting reproducible steps — habits that are critical in SOC and detection engineering roles.
 
 - Professional Communication
 
-      Learned how to turn a technical lab into a clear, recruiter‑facing portfolio project with structured documentation, visuals, and reproducible instructions.
+  Learned how to turn a technical lab into a clear, recruiter‑facing portfolio project with structured documentation, visuals, and reproducible instructions.
 
 My LiknedIn: www.linkedin.com/in/
