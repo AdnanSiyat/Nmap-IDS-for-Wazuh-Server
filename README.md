@@ -91,6 +91,3 @@ Working on this project gave me practical, end‑to‑end experience in detectio
 
 My LiknedIn: www.linkedin.com/in/
 adnan-siyat-439542309
-
----
-If you'd like, I can also open a PR template, add CI to run `xmllint` automatically on push, or help you create a real GitHub repo (I will give you the exact git commands to run
