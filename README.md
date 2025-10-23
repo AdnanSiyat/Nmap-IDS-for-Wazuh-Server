@@ -10,7 +10,6 @@ Detect Nmap scans targeting a Wazuh server. This repository contains a simple lo
 Nmap_IDS_for_Wazuh_Server/
 ├─ README.md
 ├─ LICENSE
-├─ .gitignore
 ├─ wazuh/
 │  └─ local_rules.xml
 ├─ test-data/
