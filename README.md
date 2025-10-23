@@ -61,7 +61,7 @@ Create a low-friction detection for Nmap scans against a Wazuh server using a lo
    ```bash
    sudo tail -f /var/ossec/logs/alerts/alerts.log
    ```
-   ![step-5-alerts-success](https://github.com/user-attachments/assets/1046b3ae-13e8-4ef5-8f10-2d7db1190e35)
+   ![IMG_5899](https://github.com/user-attachments/assets/3f6bf46d-808b-4e8c-be88-706ec4f753af)
 
 
 What I Learned
